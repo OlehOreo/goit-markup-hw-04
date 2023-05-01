@@ -108,6 +108,7 @@ img {
 .page-header {
   background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /*==========navigation links ========== */
@@ -215,6 +216,15 @@ img {
 
   background-color: #2e2f42;
 }
+/* O v e r l a y */
+.overlay {
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-image.jpg);
+  background-position: center;
+}
 
 .hero-title {
   max-width: 496px;
@@ -275,6 +285,19 @@ img {
 
 .features-list .item {
   flex-basis: calc((100% - 72px) / 4);
+  width: 264px;
+}
+
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+
+  height: 112px;
+
+  margin-bottom: 8px;
 }
 
 /*==========/FEATURES========== */
@@ -318,8 +341,73 @@ img {
 
   text-align: center;
 }
+/* icons */
+.socials {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+.socials-link:hover,
+.socials-link:focus {
+  background-color: #404bbf;
+}
 
 /*==========/OUR TEAM========== */
+
+/*==========C U S T O M E R S ==========*/
+.customers {
+  padding-top: 120px;
+  padding-bottom: 142px;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+}
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+/* I c o n s  */
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+
+  background-color: #ffffff;
+  color: #8e8f99;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
+/*==========/C U S T O M E R S ==========*/
 
 /*==========PAGE PORTFOLIO ==========*/
 
@@ -386,6 +474,11 @@ img {
 .portfolio-cont {
   flex-basis: calc((100% - 48px) / 3);
 }
+/* Card hover s h a d o w  */
+.portfolio-cont:hover .card-portfolio,
+.portfolio-cont:focus .card-portfolio {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .card-portfolio {
   padding: 32px 16px;
@@ -405,9 +498,48 @@ img {
 
   background-color: #2e2f42;
 }
-
+.wrapper {
+  display: flex;
+}
 .copyright {
   max-width: 264px;
 
   color: #f4f4fd;
+}
+.footer-desc {
+  margin-right: 120px;
+}
+.social-footer-text {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+/* I c o n s */
+
+.socials-footer-list {
+  display: flex;
+  gap: 16px;
+}
+
+.socials-footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+}
+.socials-footer-icons {
+  fill: #f4f4fd;
+}
+.socials-footer-link:hover,
+.socials-footer-link:focus {
+  background-color: #31d0aa;
 }
